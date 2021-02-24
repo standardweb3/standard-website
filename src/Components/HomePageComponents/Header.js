@@ -2,19 +2,25 @@ import { useState, useEffect } from "react";
 import { createUseStyles, useTheme } from "react-jss";
 import classNames from "classnames";
 
+import standardLogo from "assets/images/standard-logo.png";
+
 const useStyles = createUseStyles((Themes) => {
   return {
     menu_dt: {
       display: "flex",
       // padding: "2rem",
     },
+    logo_img: {
+      maxWidth: "200px",
+      maxHeight: "100px",
+      width: "auto",
+      height: "auto",
+    },
     logo: {
       flex: "1 1 0",
       display: "flex",
       alignItems: "center",
       justifyContent: "flex-start",
-      fontSize: "2.5rem",
-      fontWeight: 500,
     },
     menu_list: {
       listStyleType: "none",
@@ -147,7 +153,7 @@ function Header(props) {
       <div className={classes.menu_dt}>
         <div className={classNames("logo", classes.logo)}>
           <a href="#" className={classes.menu_item_a}>
-            STANDARD PROTOCOL
+            <img src={standardLogo} alt="logo" className={classes.logo_img} />
           </a>
         </div>
         <div
@@ -181,6 +187,11 @@ function Header(props) {
         <i></i>
       </span>
       <div className={classes.menu_mb_cont}>
+        <div className={classNames("logo")}>
+          <a href="#" className={classes.menu_item_a}>
+            <img src={standardLogo} alt="logo" className={classes.logo_img} />
+          </a>
+        </div>
         <div
           className={classNames(classes.menu_mb, {
             [classes.menu_mb_show]: open,

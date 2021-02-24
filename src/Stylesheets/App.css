@@ -674,3 +674,28 @@ section > div.container {
     font-size: 24px;
   }
 }
+
+.value-text {
+  background: url("../assets/images/leverage.png");
+  background-size: 200% 200%;
+  background-position: 0% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  font-size: 14rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .value-text {
+    font-size: 9rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .value-text {
+    font-size: 11vw;
+  }
+}
