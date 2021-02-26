@@ -13,7 +13,22 @@ const useStyles = createUseStyles((Themes) => {
       position: "absolute",
     },
     text: {},
+    header: {
+      fontSize: "80px",
+    },
+    enterBtn: {
+      paddingLeft: 0,
+    },
+    subheader: { fontSize: "28px" },
     enter: {},
+    "@media (max-width: 1200px)": {
+      header: {
+        fontSize: "70px",
+      },
+      subheader: {
+        fontSize: "20px",
+      },
+    },
     "@media (max-width: 992px)": {
       video: {
         transform: "translateX(-50%)",
@@ -21,10 +36,29 @@ const useStyles = createUseStyles((Themes) => {
       text: {
         textShadow: "1px 1px 2px #08091D",
       },
+      header: {
+        marginTop: "64px",
+        fontSize: "48px",
+      },
+      subheader: {
+        fontSize: "20px",
+      },
+      enterBtn: {
+        paddingLeft: 0,
+        paddingRight: 0,
+      },
       enter: {
         color: "#fff",
         // textShadow: "1px 1px 2px #000",
         background: "rgba(61,154,217, 0.5)",
+      },
+    },
+    "@media (max-width: 456px)": {
+      header: {
+        fontSize: "36px",
+      },
+      subheader: {
+        fontSize: "14px",
       },
     },
   };
@@ -39,45 +73,66 @@ function Main(props) {
       <video className={classes.video} autoPlay loop muted preload="true">
         <source src={backgroundVideo} type="video/mp4" />
       </video>
-      <div className="container">
+      <div className="container" style={{ paddingTop: "0" }}>
         <div className="row">
           <div className="col-xs-10 col-md-12 col-xs-offset-1 col-md-offset-0 text-left">
             <div className="row">
-              <div className="col-xs-12 col-md-4">
-                <div className="row">
+              <div className="row">
+                <div className="col-xs-12 col-md-8">
                   <div className="col-xs-12">
-                    <h1 className={classNames("title", classes.text)}>
-                      Digital Assets <br />
-                      At the highest <br />
-                      Standard
+                    <h1
+                      className={classNames(
+                        "title",
+                        classes.text,
+                        classes.header
+                      )}
+                    >
+                      The Standard for <br />
+                      Digital Assets
+                      <br />
                     </h1>
                   </div>
                 </div>
+              </div>
+              <div className="col-xs-12 col-md-6">
                 <div className="row">
                   <div className="col-xs-12 mt-3">
-                    <p className={classNames("paragraph", classes.text)}>
-                      Standard protocol delivers digital assets backed by truth
-                      formed with its interoperable protocol on Parity Substrate
+                    <p
+                      className={classNames(
+                        "paragraph",
+                        classes.text,
+                        classes.subheader
+                      )}
+                    >
+                      Standard protocol delivers collaterized, interoperable
+                      Digital Assets on Substrate
                     </p>
                   </div>
                 </div>
-                <div className="row">
-                  <div className="col-xs-12 col-md-6">
-                    <a
-                      className={classNames("effect-btn-one", classes.enter)}
-                      href="#"
-                      alt="Blank"
-                      target="_blank"
+                <div className="col-xs-12 col-md-8">
+                  <div className="row">
+                    <div
+                      className={classNames(
+                        "col-xs-12 col-md-6",
+                        classes.enterBtn
+                      )}
                     >
-                      Enter App
-                    </a>
-                  </div>
-                  <div className="col-xs-12 col-md-6">
-                    <img
-                      className="web3-foundation-img"
-                      src={web3}
-                      alt="Web3 foundation-grants"
-                    />
+                      <a
+                        className={classNames("effect-btn-one", classes.enter)}
+                        href="#"
+                        alt="Blank"
+                        target="_blank"
+                      >
+                        Enter App
+                      </a>
+                    </div>
+                    <div className="col-xs-12 col-md-6">
+                      <img
+                        className="web3-foundation-img"
+                        src={web3}
+                        alt="Web3 foundation-grants"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
