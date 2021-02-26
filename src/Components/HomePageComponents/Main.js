@@ -30,14 +30,18 @@ const useStyles = createUseStyles((Themes) => {
       },
     },
     "@media (max-width: 992px)": {
+      main: {
+        marginBottom: "300px",
+      },
       video: {
         transform: "translateX(-50%)",
+        top: "80%",
       },
       text: {
         textShadow: "1px 1px 2px #08091D",
       },
       header: {
-        marginTop: "64px",
+        marginTop: "30px",
         fontSize: "48px",
       },
       subheader: {
