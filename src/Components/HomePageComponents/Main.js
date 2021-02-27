@@ -20,7 +20,7 @@ const useStyles = createUseStyles((Themes) => {
     enterBtn: {
       paddingLeft: 0,
     },
-    subheader: { fontSize: "28px" },
+    subheader: { fontSize: "28px !important" },
     enter: {},
     "@media (max-width: 1200px)": {
       header: {
@@ -47,7 +47,7 @@ const useStyles = createUseStyles((Themes) => {
         fontSize: "48px",
       },
       subheader: {
-        fontSize: "20px",
+        fontSize: "20px !important",
       },
       enterBtn: {
         paddingLeft: 0,
@@ -64,7 +64,7 @@ const useStyles = createUseStyles((Themes) => {
         fontSize: "36px",
       },
       subheader: {
-        fontSize: "14px",
+        fontSize: "14px !important",
       },
     },
   };
@@ -107,13 +107,13 @@ function Main(props) {
                   <div className="col-xs-12 mt-3">
                     <p
                       className={classNames(
-                        "paragraph",
                         classes.text,
-                        classes.subheader
+                        classes.subheader,
+                        "paragraph"
                       )}
                     >
-                      Standard delivers collaterized, interoperable
-                      Digital Assets on Substrate
+                      Standard delivers collaterized, interoperable Digital
+                      Assets on Substrate
                     </p>
                   </div>
                 </div>
