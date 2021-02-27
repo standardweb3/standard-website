@@ -23,7 +23,12 @@ function LearnMore(props) {
             </p>
             <div className="row">
               <div className="col-xs-12">
-                <a href="" alt="telegram">
+                <a
+                  href="https://t.me/standard_protocol"
+                  alt="telegram"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img
                     className="portal-back-icon"
                     src={contact1}
@@ -31,9 +36,8 @@ function LearnMore(props) {
                   />
                 </a>
                 <a
-                  href=""
                   alt="discord"
-                  href="https://discord.gg/27ZxvFcFRA"
+                  href="https://discord.gg/27ZxvyarnFcFRA"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
