@@ -1,6 +1,6 @@
 {
-  "short_name": "Quasar",
-  "name": "Quasar, Money market for interchain ecosystem",
+  "short_name": "Standard",
+  "name": "Standard - The Standard for Digital Assets",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,14 +8,8 @@
       "type": "image/x-icon"
     },
     {
-      "src": "quasar-logo.png",
-      "type": "image/png",
-      "sizes": "403x387"
-    },
-    {
-      "src": "interchain-colored.png",
-      "type": "image/png",
-      "sizes": "1113x491"
+      "src": "standard-banner.png",
+      "type": "image/png"
     }
   ],
   "start_url": ".",
