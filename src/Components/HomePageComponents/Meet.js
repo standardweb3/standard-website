@@ -27,17 +27,19 @@ function Meet(props) {
                   stablecoin
                 </h2>
                 <p className="paragraph">
-                  With elastic supply determined by rebase mechanism, Standard maintains an decentralized algorithmic reserve bank
-                  which generates stablecoin in the price of 1USD with
-                  decentralized governance
+                  With elastic supply determined by rebase mechanism, Standard
+                  maintains an decentralized algorithmic reserve bank which
+                  generates stablecoin in the price of 1USD with decentralized
+                  governance
                 </p>
                 <div className="row">
                   <div className="col-xs-12 col-md-5">
                     <a
                       className="effect-btn-one pink"
-                      href="#"
-                      alt="Blank"
+                      href="https://docs.standard.tech/"
+                      alt="learn-more"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       Learn More
                     </a>

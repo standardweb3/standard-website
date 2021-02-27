@@ -135,11 +135,18 @@ function Main(props) {
                       </a>
                     </div>
                     <div className="col-xs-12 col-md-6">
-                      <img
-                        className="web3-foundation-img"
-                        src={web3}
-                        alt="Web3 foundation-grants"
-                      />
+                      <a
+                        href="https://github.com/w3f/Open-Grants-Program/pull/244"
+                        alt="web3-logo"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img
+                          className="web3-foundation-img"
+                          src={web3}
+                          alt="Web3 foundation-grants"
+                        />
+                      </a>
                     </div>
                   </div>
                 </div>
