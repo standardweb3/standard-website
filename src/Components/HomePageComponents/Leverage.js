@@ -1,9 +1,7 @@
 import { createUseStyles, useTheme } from "react-jss";
-import classNames from "classnames";
+// import classNames from "classnames";
 
-// import twitter from "assets/images/twitter-white.png";
-// import discord from "assets/images/discord-white.png";
-// import medium from "assets/images/medium-white.png";
+import leverageGIF from "assets/images/standard-leverage.gif";
 
 const useStyles = createUseStyles((Themes) => {
   return {
@@ -25,10 +23,7 @@ function Leverage(props) {
           <div className="col-xs-10 col-xs-offset-1">
             <div className="row">
               <div className="col-xs-12 col-md-5">
-                <img
-                  src="https://dummyimage.com/600x600/000/d30e0e"
-                  alt="temp"
-                />
+                <img src={leverageGIF} alt="leverage-animation" />
               </div>
               <div className="col-xs-12 col-md-6 text-left col-md-offset-1 col-xs-offset-0">
                 <h2 className="title">Leverage on everything</h2>

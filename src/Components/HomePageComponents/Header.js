@@ -135,6 +135,7 @@ function Header(props) {
     return menuItems.map((item, index) => {
       return (
         <li
+          key={`${item}-${index}`}
           style={{ transitionDelay: `${0.1 * index}s` }}
           className={classNames(classes.menu_item, classes["m-menuitem"], {
             [classes["m-menuitem-open"]]: animateItem,

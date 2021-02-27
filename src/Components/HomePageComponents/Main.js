@@ -3,14 +3,15 @@ import classNames from "classnames";
 
 // Images
 import web3 from "assets/images/web3-foundation-grants@2x.png";
-import backgroundVideo from "assets/videos/video1.mp4";
+import backgroundGIF from "assets/images/standard-main.gif";
 
 const useStyles = createUseStyles((Themes) => {
   return {
     main: { position: "relative" },
-    video: {
+    animation: {
       zIndex: 0,
       position: "absolute",
+      width: "50%",
     },
     text: {},
     header: {
@@ -33,9 +34,10 @@ const useStyles = createUseStyles((Themes) => {
       main: {
         marginBottom: "300px",
       },
-      video: {
+      animation: {
         transform: "translateX(-50%)",
         top: "80%",
+        width: "80%",
       },
       text: {
         textShadow: "1px 1px 2px #08091D",
@@ -74,9 +76,11 @@ function Main(props) {
 
   return (
     <section className={classNames("landing main-theme-color", classes.main)}>
-      <video className={classes.video} autoPlay loop muted preload="true">
-        <source src={backgroundVideo} type="video/mp4" />
-      </video>
+      <img
+        className={classes.animation}
+        src={backgroundGIF}
+        alt="main-animation"
+      />
       <div className="container" style={{ paddingTop: "0" }}>
         <div className="row">
           <div className="col-xs-10 col-md-12 col-xs-offset-1 col-md-offset-0 text-left">

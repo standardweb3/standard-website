@@ -1,20 +1,16 @@
-import { createUseStyles, useTheme } from "react-jss";
-import classNames from "classnames";
+// import { createUseStyles, useTheme } from "react-jss";
+// import classNames from "classnames";
 
-import meetVideo from "assets/videos/video0.mp4";
+import meetGIF from "assets/images/standard-meet.gif";
 
-const useStyles = createUseStyles((Themes) => {
-  return {
-    video: {
-      width: "100%",
-      height: "auto",
-    },
-  };
-});
+// const useStyles = createUseStyles((Themes) => {
+//   return {
+//   };
+// });
 
 function Meet(props) {
-  const theme = useTheme();
-  const classes = useStyles({ props, theme });
+  // const theme = useTheme();
+  // const classes = useStyles({ props, theme });
 
   return (
     <section className="algorithmic">
@@ -23,15 +19,7 @@ function Meet(props) {
           <div className="col-xs-10 col-xs-offset-1">
             <div className="row flex-column-reverse flex-md-row">
               <div className="col-md-5 col-md-offset-1 col-md-push-6">
-                <video
-                  className={classes.video}
-                  autoPlay
-                  loop
-                  muted
-                  preload="true"
-                >
-                  <source src={meetVideo} type="video/mp4" />
-                </video>
+                <img src={meetGIF} alt="meet-animation" />
               </div>
               <div className="col-xs-12 col-md-6 text-left  col-md-pull-5">
                 <h2 className="title">
