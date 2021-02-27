@@ -12,6 +12,8 @@ import Value from "Components/HomePageComponents/Value";
 import LearnMore from "Components/HomePageComponents/LearnMore";
 import Footer from "Components/HomePageComponents/Footer";
 
+import standardBanner from "assets/images/standard-banner.png";
+
 const useStyles = createUseStyles((Themes) => {
   return {};
 });
