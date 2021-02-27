@@ -24,9 +24,7 @@ function Footer(props) {
     >
       <div className="row text-left">
         <div className="col-xs-12 col-md-3 footer-main-section">
-          <p>
-            STANDARD
-          </p>
+          <p>STANDARD</p>
           <p>
             Digital Assets
             <br />
@@ -104,7 +102,7 @@ function Footer(props) {
         </div>
       </div>
       <div className="row text-left mid-padding-y">
-        <div className="col-md-12">© 2021 Standard Protocol</div>
+        <div className="col-md-12">© 2021 Standard</div>
       </div>
     </div>
   );
