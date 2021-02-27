@@ -26,8 +26,6 @@ function Footer(props) {
         <div className="col-xs-12 col-md-3 footer-main-section">
           <p>
             STANDARD
-            <br />
-            PROTOCOL
           </p>
           <p>
             Digital Assets

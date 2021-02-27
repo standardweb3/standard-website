@@ -24,7 +24,7 @@ function Liquidation(props) {
                   liquidated assets
                 </h2>
                 <p className="paragraph">
-                  In Bear run, Standard protocol places liquidated assets in
+                  In Bear run, Standard places liquidated assets in
                   automated market maker instead of doing an auction, creating
                   an arbitrage where users can buy assets in a cheaper price.{" "}
                 </p>

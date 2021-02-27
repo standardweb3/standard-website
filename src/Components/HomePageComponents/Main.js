@@ -112,7 +112,7 @@ function Main(props) {
                         classes.subheader
                       )}
                     >
-                      Standard protocol delivers collaterized, interoperable
+                      Standard delivers collaterized, interoperable
                       Digital Assets on Substrate
                     </p>
                   </div>
