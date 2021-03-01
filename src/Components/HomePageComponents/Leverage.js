@@ -28,9 +28,9 @@ function Leverage(props) {
               <div className="col-xs-12 col-md-6 text-left col-md-offset-1 col-xs-offset-0">
                 <h2 className="title">Leverage on everything</h2>
                 <p className="paragraph">
-                  In bull run, Standard uses oracle to create synthetic
-                  assets which enables users to trade virtual stocks,
-                  commodities backed by leverage trading.
+                  Standard enables leveraged trading of virtual stocks and
+                  commodities, backed by synthetic assets that are minted
+                  through the use of oracles.
                 </p>
                 <div className="row">
                   <div className="col-md-5">

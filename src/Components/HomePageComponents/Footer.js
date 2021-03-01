@@ -4,11 +4,15 @@ import classNames from "classnames";
 import twitter from "assets/images/twitter@2x.png";
 import medium from "assets/images/medium@2x.png";
 import linkedin from "assets/images/linkedin@2x.png";
+import standardLogo from "assets/images/standard-logo.png";
 
 const useStyles = createUseStyles((Themes) => {
   return {
     footer: {
       color: "#fff",
+    },
+    logo: {
+      marginBottom: "25px",
     },
   };
 });
@@ -24,17 +28,23 @@ function Footer(props) {
     >
       <div className="row text-left">
         <div className="col-xs-12 col-md-3 footer-main-section">
-          <p>STANDARD</p>
+          <img className={classes.logo} src={standardLogo} alt="logo" />
           <p>
-            Digital Assets
+            The Standard for
             <br />
-            At the highest Standard
+            Digital Assets
           </p>
         </div>
 
         <div className="col-xs-12 col-md-2 col-md-offset-1 desktop-collapse-section">
-          <p className="footer-sub-title">Papers</p>
-          <a className="footer-link" href="#" alt="#">
+          <p className="footer-sub-title">Documentation</p>
+          <a
+            className="footer-link"
+            href="https://docs.standard.tech/"
+            target="_blank"
+            rel="noopener noreferrer"
+            alt="#"
+          >
             White Paper
           </a>
           <a className="footer-link" href="#" alt="#">
@@ -57,10 +67,16 @@ function Footer(props) {
 
         <div className="col-xs-12 mobile-collapse-section">
           <a href="#papers" data-toggle="collapse" className="toggle-link">
-            Papers
+            Documentation
           </a>
           <div id="papers" className="collapse">
-            <a className="footer-link" href="#" alt="#">
+            <a
+              href="https://docs.standard.tech/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footer-link"
+              alt="#"
+            >
               White Paper
             </a>
             <a className="footer-link" href="#" alt="#">

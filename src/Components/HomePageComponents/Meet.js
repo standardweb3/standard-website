@@ -23,14 +23,14 @@ function Meet(props) {
               </div>
               <div className="col-xs-12 col-md-6 text-left  col-md-pull-5">
                 <h2 className="title">
-                  Meet collaterized algorithmic <br />
+                  Introducing the collaterized algorithmic <br />
                   stablecoin
                 </h2>
                 <p className="paragraph">
-                  With elastic supply determined by rebase mechanism, Standard
-                  maintains an decentralized algorithmic reserve bank which
-                  generates stablecoin in the price of 1USD with decentralized
-                  governance
+                  Standard establishes a reserve bank with decentralized
+                  governance. It issues a collateralized stable coin valued at
+                  1USD, that has an elastic supply determined by a rebase
+                  mechanism.
                 </p>
                 <div className="row">
                   <div className="col-xs-12 col-md-5">
