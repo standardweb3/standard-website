@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { createUseStyles, useTheme } from "react-jss";
 import classNames from "classnames";
 
@@ -47,7 +48,13 @@ function Footer(props) {
           >
             White Paper
           </a>
-          <a className="footer-link" href="#" alt="#">
+          <a
+            className="footer-link"
+            href="https://github.com/w3f/Open-Grants-Program/pull/244"
+            target="_blank"
+            rel="noopener noreferrer"
+            alt="#"
+          >
             Grant Applications
           </a>
         </div>
@@ -66,10 +73,7 @@ function Footer(props) {
         </div>
 
         <div className="col-xs-12 mobile-collapse-section">
-          <a href="#papers" data-toggle="collapse" className="toggle-link">
-            Documentation
-          </a>
-          <div id="papers" className="collapse">
+          <div id="papers">
             <a
               href="https://docs.standard.tech/"
               target="_blank"
@@ -79,17 +83,20 @@ function Footer(props) {
             >
               White Paper
             </a>
-            <a className="footer-link" href="#" alt="#">
+            <a
+              className="footer-link"
+              alt="#"
+              href="https://github.com/w3f/Open-Grants-Program/pull/244"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Grant Applications
             </a>
           </div>
         </div>
 
         <div className="col-xs-12 mobile-collapse-section">
-          <a href="#link" data-toggle="collapse" className="toggle-link">
-            Link
-          </a>
-          <div id="link" className="collapse">
+          <div id="link">
             <a className="footer-link" href="#" alt="#">
               Team
             </a>
