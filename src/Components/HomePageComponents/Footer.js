@@ -16,6 +16,10 @@ const useStyles = createUseStyles((Themes) => {
       marginBottom: "25px",
       width: "200px",
     },
+    footer_sub_title: {
+      fontWeight: 600,
+      fontSize: "18px",
+    },
   };
 });
 
@@ -39,7 +43,11 @@ function Footer(props) {
         </div>
 
         <div className="col-xs-12 col-md-2 col-md-offset-1 desktop-collapse-section">
-          <p className="footer-sub-title">Documentation</p>
+          <p
+            className={classNames("footer-sub-title", classes.footer_sub_title)}
+          >
+            Documentations
+          </p>
           <a
             className="footer-link"
             href="https://whitepaper.standard.tech/"
@@ -61,7 +69,11 @@ function Footer(props) {
         </div>
 
         <div className="col-xs-12 col-md-2 desktop-collapse-section">
-          <p className="footer-sub-title">Link</p>
+          <p
+            className={classNames("footer-sub-title", classes.footer_sub_title)}
+          >
+            Links
+          </p>
           <a
             className="footer-link"
             target="_blank"
@@ -135,7 +147,11 @@ function Footer(props) {
         </div>
 
         <div className="col-xs-12 col-md-4 social-section">
-          <p className="footer-sub-title">Socials</p>
+          <p
+            className={classNames("footer-sub-title", classes.footer_sub_title)}
+          >
+            Socials
+          </p>
           <div>
             <a href="#" target="_blank">
               <img className="social-icon" src={twitter} alt="twitter" />
