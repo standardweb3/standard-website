@@ -37,7 +37,7 @@ function LearnMore(props) {
                 </a>
                 <a
                   alt="discord"
-                  href="https://discord.gg/27ZxvyarnFcFRA"
+                  href="https://discord.gg/henceyTkM7"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
