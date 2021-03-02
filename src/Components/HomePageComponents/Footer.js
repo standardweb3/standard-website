@@ -18,7 +18,7 @@ const useStyles = createUseStyles((Themes) => {
     },
     footer_sub_title: {
       fontWeight: 600,
-      fontSize: "18px",
+      fontSize: "16px",
     },
   };
 });
