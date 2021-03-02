@@ -3,7 +3,7 @@ import classNames from "classnames";
 
 // Images
 import web3 from "assets/images/web3-foundation-grants@2x.png";
-import backgroundGIF from "assets/images/standard-main.gif";
+import backgroundVideo from "assets/videos/standard-main.mov";
 
 const useStyles = createUseStyles((Themes) => {
   return {
@@ -76,11 +76,9 @@ function Main(props) {
 
   return (
     <section className={classNames("landing main-theme-color", classes.main)}>
-      <img
-        className={classes.animation}
-        src={backgroundGIF}
-        alt="main-animation"
-      />
+      <video className={classes.animation} autoPlay loop muted preload="true">
+        <source src={backgroundVideo} type="video/mp4" />
+      </video>
       <div className="container" style={{ paddingTop: "0" }}>
         <div className="row">
           <div className="col-xs-10 col-md-12 col-xs-offset-1 col-md-offset-0 text-left">

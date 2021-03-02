@@ -45,7 +45,7 @@ function Footer(props) {
             href="https://whitepaper.standard.tech/"
             target="_blank"
             rel="noopener noreferrer"
-            alt="#"
+            alt="white-paper"
           >
             White Paper
           </a>
@@ -54,7 +54,7 @@ function Footer(props) {
             href="https://github.com/w3f/Open-Grants-Program/pull/244"
             target="_blank"
             rel="noopener noreferrer"
-            alt="#"
+            alt="grant-application"
           >
             Grant Application
           </a>
@@ -62,10 +62,22 @@ function Footer(props) {
 
         <div className="col-xs-12 col-md-2 desktop-collapse-section">
           <p className="footer-sub-title">Link</p>
-          <a className="footer-link" href="https://github.com/digitalnativeinc/standard-substrate" alt="#">
-            Github repo
+          <a
+            className="footer-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/digitalnativeinc/standard-substrate"
+            alt="github"
+          >
+            Github
           </a>
-          <a className="footer-link" href="https://docs.standard.tech" alt="#">
+          <a
+            className="footer-link"
+            href="https://docs.standard.tech"
+            target="_blank"
+            rel="noopener noreferrer"
+            alt="documentation"
+          >
             Documentation
           </a>
           <a className="footer-link" href="#" alt="#">
@@ -80,13 +92,13 @@ function Footer(props) {
               target="_blank"
               rel="noopener noreferrer"
               className="footer-link"
-              alt="#"
+              alt="white-paper"
             >
               White Paper
             </a>
             <a
               className="footer-link"
-              alt="#"
+              alt="grant-application"
               href="https://github.com/w3f/Open-Grants-Program/pull/244"
               target="_blank"
               rel="noopener noreferrer"
@@ -98,10 +110,22 @@ function Footer(props) {
 
         <div className="col-xs-12 mobile-collapse-section">
           <div id="link">
-            <a className="footer-link" href="https://github.com/digitalnativeinc/standard-substrate" alt="#">
-              Github repo
+            <a
+              className="footer-link"
+              href="https://github.com/digitalnativeinc/standard-substrate"
+              alt="github"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Github
             </a>
-            <a className="footer-link" href="https://docs.standard.tech" alt="#">
+            <a
+              className="footer-link"
+              href="https://docs.standard.tech"
+              alt="documentation"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Documentation
             </a>
             <a className="footer-link" href="#" alt="#">
