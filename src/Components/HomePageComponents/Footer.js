@@ -20,6 +20,20 @@ const useStyles = createUseStyles((Themes) => {
       fontWeight: 600,
       fontSize: "16px",
     },
+    contact_container: {
+      display: "inline-block",
+      marginLeft: "12px",
+    },
+    contact: {
+      fontSize: "14px",
+      margin: 0,
+      display: "inline-block",
+    },
+    copyright: {
+      marginRight: "12px",
+      paddingLeft: "15px",
+      display: "inline-block",
+    },
   };
 });
 
@@ -165,8 +179,20 @@ function Footer(props) {
           </div>
         </div>
       </div>
+
       <div className="row text-left mid-padding-y">
-        <div className="col-md-12">© 2021 Standard</div>
+        <div className={classNames(classes.copyright)}>© 2021 Standard</div>|
+        <div className={classNames(classes.contact_container)}>
+          <a
+            className={classNames("footer-link", classes.contact)}
+            href="mailto:contact@standard.tech"
+            alt="github"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Contact Us
+          </a>
+        </div>
       </div>
     </div>
   );
