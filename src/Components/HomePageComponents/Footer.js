@@ -42,7 +42,7 @@ function Footer(props) {
           <p className="footer-sub-title">Documentation</p>
           <a
             className="footer-link"
-            href="https://docs.standard.tech/"
+            href="https://whitepaper.standard.tech/"
             target="_blank"
             rel="noopener noreferrer"
             alt="#"
@@ -56,17 +56,17 @@ function Footer(props) {
             rel="noopener noreferrer"
             alt="#"
           >
-            Grant Applications
+            Grant Application
           </a>
         </div>
 
         <div className="col-xs-12 col-md-2 desktop-collapse-section">
           <p className="footer-sub-title">Link</p>
-          <a className="footer-link" href="#" alt="#">
-            Team
+          <a className="footer-link" href="https://github.com/digitalnativeinc/standard-substrate" alt="#">
+            Github repo
           </a>
-          <a className="footer-link" href="#" alt="#">
-            Brand Guide
+          <a className="footer-link" href="https://docs.standard.tech" alt="#">
+            Documentation
           </a>
           <a className="footer-link" href="#" alt="#">
             Blog
@@ -76,7 +76,7 @@ function Footer(props) {
         <div className="col-xs-12 mobile-collapse-section">
           <div id="papers">
             <a
-              href="https://docs.standard.tech/"
+              href="https://whitepaper.standard.tech/"
               target="_blank"
               rel="noopener noreferrer"
               className="footer-link"
@@ -91,18 +91,18 @@ function Footer(props) {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Grant Applications
+              Grant Application
             </a>
           </div>
         </div>
 
         <div className="col-xs-12 mobile-collapse-section">
           <div id="link">
-            <a className="footer-link" href="#" alt="#">
-              Team
+            <a className="footer-link" href="https://github.com/digitalnativeinc/standard-substrate" alt="#">
+              Github repo
             </a>
-            <a className="footer-link" href="#" alt="#">
-              Brand Guide
+            <a className="footer-link" href="https://docs.standard.tech" alt="#">
+              Documentation
             </a>
             <a className="footer-link" href="#" alt="#">
               Blog
