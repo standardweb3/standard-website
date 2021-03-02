@@ -46,18 +46,33 @@ function Backers(props) {
           <div className="col-xs-10 col-xs-offset-1 backedSection-BG">
             <h3 className="title mid-padding-y ">Backed by</h3>
             <div className={classNames("row", classes.sponsers)}>
-              <div className={classes.sponser}>
+              <a
+                href="https://www.polkakr.com/"
+                alt="telegram"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={classes.sponser}
+              >
                 <img className="back-icon" src={polkakr} alt="temp" />
-              </div>
-              <div className={classes.sponser}>
+              </a>
+              <a
+                href="https://www.polkabase.com/"
+                alt="telegram"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={classes.sponser}
+              >
                 <img className="back-icon" src={polkabase} alt="temp" />
-              </div>
-              <div className={classes.sponser}>
+              </a>
+              <a
+                href="https://www.bitblockcap.com/"
+                alt="telegram"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={classes.sponser}
+              >
                 <img className="back-icon" src={bitblock} alt="temp" />
-              </div>
-              <div className={classes.sponser}>
-                <img className="back-icon" src={chilio} alt="temp" />
-              </div>
+              </a>
             </div>
           </div>
         </div>
