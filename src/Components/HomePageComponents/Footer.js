@@ -14,6 +14,7 @@ const useStyles = createUseStyles((Themes) => {
     },
     logo: {
       marginBottom: "25px",
+      width: "200px",
     },
   };
 });
