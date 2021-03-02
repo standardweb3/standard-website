@@ -81,7 +81,7 @@ function Footer(props) {
             href="https://github.com/digitalnativeinc/standard-substrate"
             alt="github"
           >
-            Github
+            GitHub
           </a>
           <a
             className="footer-link"
@@ -129,7 +129,7 @@ function Footer(props) {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Github
+              GitHub
             </a>
             <a
               className="footer-link"
