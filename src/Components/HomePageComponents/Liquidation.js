@@ -20,7 +20,7 @@ function Liquidation(props) {
               <div className="col-xs-12 col-md-6 text-left  col-md-pull-5">
                 <h2 className="title">
                   Permissionless <br />
-                  Access on <br />
+                  access on <br />
                   liquidated assets
                 </h2>
                 <p className="paragraph">
