@@ -251,6 +251,10 @@ footer {
   text-decoration: none;
 }
 
+.footer-link:hover {
+  color: #fff;
+}
+
 .footer-sub-title {
   margin-bottom: 30px;
 }

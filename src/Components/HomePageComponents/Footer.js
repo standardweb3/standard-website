@@ -178,9 +178,14 @@ function Footer(props) {
             {/*<a href="#" target="_blank">
               <img className="social-icon" src={medium} alt="medium" />
           </a>*/}
-            {/*<a href="#" target="_blank">
+            <a
+              href="https://www.linkedin.com/company/standard-protocol"
+              target="_blank"
+              rel="noopener noreferrer"
+              alt="linkedIn"
+            >
               <img className="social-icon" src={linkedin} alt="linkedin" />
-            </a>*/}
+            </a>
           </div>
         </div>
       </div>
