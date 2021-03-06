@@ -47,9 +47,9 @@ function LearnMore(props) {
                     alt="discord"
                   />
                 </a>
-                <a href="" alt="">
+                {/*<a href="" alt="">
                   <img className="portal-back-icon" src={contact3} alt="temp" />
-                </a>
+                </a>*/}
               </div>
             </div>
           </div>

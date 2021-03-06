@@ -64,7 +64,7 @@ function Footer(props) {
           </p>
           <a
             className="footer-link"
-            href="https://whitepaper.standard.tech/"
+            href="https://app.slidebean.com/p/8gld9u042r/Standard-protocol"
             target="_blank"
             rel="noopener noreferrer"
             alt="white-paper"
@@ -106,15 +106,15 @@ function Footer(props) {
           >
             Documentation
           </a>
-          <a className="footer-link" href="#" alt="#">
+          {/*<a className="footer-link" href="#" alt="#">
             Blog
-          </a>
+          </a>*/}
         </div>
 
         <div className="col-xs-12 mobile-collapse-section">
           <div id="papers">
             <a
-              href="https://whitepaper.standard.tech/"
+              href="https://app.slidebean.com/p/8gld9u042r/Standard-protocol"
               target="_blank"
               rel="noopener noreferrer"
               className="footer-link"
@@ -154,9 +154,9 @@ function Footer(props) {
             >
               Documentation
             </a>
-            <a className="footer-link" href="#" alt="#">
+            {/*<a className="footer-link" href="#" alt="#">
               Blog
-            </a>
+            </a>*/}
           </div>
         </div>
 
@@ -164,18 +164,23 @@ function Footer(props) {
           <p
             className={classNames("footer-sub-title", classes.footer_sub_title)}
           >
-            Socials
+            Social
           </p>
           <div>
-            <a href="#" target="_blank">
+            <a
+              alt="twitter"
+              target="_blank"
+              href="https://twitter.com/standarddefi"
+              rel="noopener noreferrer"
+            >
               <img className="social-icon" src={twitter} alt="twitter" />
             </a>
-            <a href="#" target="_blank">
+            {/*<a href="#" target="_blank">
               <img className="social-icon" src={medium} alt="medium" />
-            </a>
-            <a href="#" target="_blank">
+          </a>*/}
+            {/*<a href="#" target="_blank">
               <img className="social-icon" src={linkedin} alt="linkedin" />
-            </a>
+            </a>*/}
           </div>
         </div>
       </div>
