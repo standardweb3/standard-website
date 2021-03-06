@@ -57,8 +57,13 @@ function LearnMore(props) {
 
         <div className="row" style={{ marginTop: "4rem" }}>
           <div className="col-xs-6 col-md-2 col-xs-offset-3 col-md-offset-5">
-            <a className="effect-btn-one" href="#" alt="Blank" target="_blank">
-              Enter App
+            <a
+              className="effect-btn-one disabled-a"
+              href="#"
+              alt="Blank"
+              target="_blank"
+            >
+              Coming Soon
             </a>
           </div>
         </div>

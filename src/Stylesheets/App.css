@@ -700,3 +700,9 @@ section > div.container {
     font-size: 11vw;
   }
 }
+
+.disabled-a {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.5);
+}

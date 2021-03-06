@@ -165,12 +165,15 @@ function Header(props) {
             {renderMenuItems()}
             <li>
               <a
-                className={classNames("effect-btn-one", classes.enter_app_btn)}
+                className={classNames(
+                  "effect-btn-one disabled-a",
+                  classes.enter_app_btn
+                )}
                 href="#"
                 alt="Blank"
                 target="_blank"
               >
-                Enter App
+                Coming Soon
               </a>
             </li>
           </ul>
@@ -204,7 +207,7 @@ function Header(props) {
               <a
                 style={{ transitionDelay: `${0.5}s` }}
                 className={classNames(
-                  "effect-btn-one",
+                  "effect-btn-one disabled-a",
                   classes.enter_app_btn,
                   classes["m-menuitem"],
                   {
@@ -216,7 +219,7 @@ function Header(props) {
                 alt="Blank"
                 target="_blank"
               >
-                Enter App
+                Coming Soon
               </a>
             </li>
           </ul>

@@ -124,12 +124,15 @@ function Main(props) {
                       )}
                     >
                       <a
-                        className={classNames("effect-btn-one", classes.enter)}
+                        className={classNames(
+                          "effect-btn-one disabled-a",
+                          classes.enter
+                        )}
                         href="#"
                         alt="Blank"
                         target="_blank"
                       >
-                        Enter App
+                        Coming Soon
                       </a>
                     </div>
                     <div className="col-xs-12 col-md-6">

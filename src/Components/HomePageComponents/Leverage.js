@@ -35,12 +35,12 @@ function Leverage(props) {
                 <div className="row">
                   <div className="col-md-5">
                     <a
-                      className="effect-btn-one"
+                      className="effect-btn-one disabled-a"
                       href="#"
                       alt="Blank"
                       target="_blank"
                     >
-                      Enter App
+                      Coming Soon
                     </a>
                   </div>
                 </div>
