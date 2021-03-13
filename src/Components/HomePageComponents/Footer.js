@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { createUseStyles, useTheme } from "react-jss";
 import classNames from "classnames";
 
@@ -175,9 +174,14 @@ function Footer(props) {
             >
               <img className="social-icon" src={twitter} alt="twitter" />
             </a>
-            {/*<a href="#" target="_blank">
+            <a
+              alt="medium"
+              target="_blank"
+              href="https://medium.com/@standard_protocol"
+              rel="noopener noreferrer"
+            >
               <img className="social-icon" src={medium} alt="medium" />
-          </a>*/}
+            </a>
             <a
               href="https://www.linkedin.com/company/standard-protocol"
               target="_blank"

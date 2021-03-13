@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { createUseStyles, useTheme } from "react-jss";
 import classNames from "classnames";
 

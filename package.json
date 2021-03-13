@@ -9,6 +9,7 @@
     "bootstrap": "^3.2.0",
     "classnames": "^2.2.6",
     "global": "^4.4.0",
+    "import": "^0.0.6",
     "jquery": "^3.4.1",
     "netlify": "^6.1.9",
     "react": "^17.0.1",

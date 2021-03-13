@@ -4,7 +4,6 @@ import classNames from "classnames";
 import polkakr from "assets/images/polkakr.png";
 import polkabase from "assets/images/polkabase.png";
 import bitblock from "assets/images/bitblock.jpg";
-import chilio from "assets/images/chilio.png";
 
 const useStyles = createUseStyles((Themes) => {
   return {

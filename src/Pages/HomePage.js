@@ -9,6 +9,7 @@ import Backers from "Components/HomePageComponents/Backers";
 import Liquidation from "Components/HomePageComponents/Liquidation";
 import Leverage from "Components/HomePageComponents/Leverage";
 import Value from "Components/HomePageComponents/Value";
+import TeamProfile from "Components/HomePageComponents/TeamProfile";
 import LearnMore from "Components/HomePageComponents/LearnMore";
 import Footer from "Components/HomePageComponents/Footer";
 
@@ -30,6 +31,7 @@ function HomePage(props) {
         <Leverage />
         <Liquidation />
         <Value />
+        <TeamProfile />
         <LearnMore />
         <Footer />
       </main>
