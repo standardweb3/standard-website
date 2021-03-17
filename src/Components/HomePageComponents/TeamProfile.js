@@ -119,7 +119,7 @@ const TEAM_DATA = {
       title: "Co-founder",
       experiences: [
         "Founder of Chiko Media",
-        "President of BTour Chain, Greater China",
+        "Co-founder of PolkaKR",
         "Ex Korean Executive Director at BitBlock Group",
       ],
       description:
