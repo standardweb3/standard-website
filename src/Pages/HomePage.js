@@ -8,13 +8,19 @@ import Meet from "Components/HomePageComponents/Meet";
 import Backers from "Components/HomePageComponents/Backers";
 import Liquidation from "Components/HomePageComponents/Liquidation";
 import Leverage from "Components/HomePageComponents/Leverage";
-import Value from "Components/HomePageComponents/Value";
 import TeamProfile from "Components/HomePageComponents/TeamProfile";
 import LearnMore from "Components/HomePageComponents/LearnMore";
 import Footer from "Components/HomePageComponents/Footer";
 
 const useStyles = createUseStyles((Themes) => {
-  return {};
+  return {
+    mainContainer: {
+      backgroundColor: "#08091c",
+      color: "#fff",
+      lineHeight: 1.4,
+      fontFamily: "Hind",
+    },
+  };
 });
 
 function HomePage(props) {
@@ -22,20 +28,17 @@ function HomePage(props) {
   const classes = useStyles({ props, theme });
 
   return (
-    <div className={{}}>
-      <main>
-        <Header />
-        <Main />
-        <Backers />
-        <Meet />
-        <Leverage />
-        <Liquidation />
-        <Value />
-        <TeamProfile />
-        <LearnMore />
-        <Footer />
-      </main>
-    </div>
+    <main className={classes.mainContainer}>
+      <Header />
+      <Main />
+      <Backers />
+      <Meet />
+      <Leverage />
+      <Liquidation />
+      <TeamProfile />
+      <LearnMore />
+      <Footer />
+    </main>
   );
 }
 

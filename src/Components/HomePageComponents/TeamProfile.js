@@ -6,6 +6,13 @@ import jay from "assets/images/tpjay.png";
 import tony from "assets/images/tptony.png";
 import billy from "assets/images/tpbilly.png";
 import kang from "assets/images/tpkang.png";
+import jasper from "assets/images/tpjasper.png";
+import march from "assets/images/tpmarch.png";
+import dixon from "assets/images/tpdixon.png";
+import momo from "assets/images/tpmomo.png";
+import julia from "assets/images/tpjulia.png";
+import beli from "assets/images/tpbeli.png";
+import mich from "assets/images/tpmich.png";
 
 const useStyles = createUseStyles((Themes) => {
   return {
@@ -29,7 +36,7 @@ const useStyles = createUseStyles((Themes) => {
     tpItem: {
       display: "flex",
       flexDirection: "column",
-      width: "300px",
+      width: "25%",
       padding: "24px",
     },
     tpExps: {
@@ -54,7 +61,7 @@ const useStyles = createUseStyles((Themes) => {
       height: "250px",
       objectFit: "cover",
       transition: "all 0.25s ease-out",
-      cursor: "pointer",
+      cursor: "default",
       padding: "0 12px",
       "&:hover": {
         transform: "scale(1.1)",
@@ -83,7 +90,7 @@ const useStyles = createUseStyles((Themes) => {
     tpBtn: {},
     "@media (max-width: 1200px)": {
       tpItem: {
-        width: "50%",
+        width: "33.33%",
       },
     },
     "@media (max-width: 768px)": {
@@ -91,7 +98,7 @@ const useStyles = createUseStyles((Themes) => {
         width: "100%",
       },
       tpImage: {
-        width: "80%",
+        width: "60%",
         alignSelf: "center",
       },
     },
@@ -106,7 +113,7 @@ const TEAM_DATA = {
       title: "Founder & CTO",
       experiences: [
         "Software Engineer at Plasm",
-        "Head ambassador for East Asia of Polkadot",
+        "Head Ambassador for East Asia of Polkadot",
         "Co-founder of PolkaKR",
       ],
       description:
@@ -120,21 +127,19 @@ const TEAM_DATA = {
       experiences: [
         "Founder of Chiko Media",
         "Co-founder of PolkaKR",
-        "Ex Korean Executive Director at BitBlock Group",
+        "Formerly Korean Executive Director at BitBlock Group",
       ],
       description:
         "Jay is an active investor in the Crypto Currency Industry. He is the Co-founder of PolkaKR, Korean Executive Director at BitBlock Capital and President of BTour Chain, Greater China. He graduated with a politics degree at Zhejiang University and is also an active columnist. Jay provides fresh set of eyes in the analysis of businesses using his solid foundations in politics.",
       link: "https://www.linkedin.com/in/jaewon-shin-7911b7194",
       photo: jay,
     },
-  ],
-  team: [
     {
       name: "Billy Lee",
       title: "Lead Developer",
       experiences: [
-        "Software Engineer with over 4 years of working experience in full stack web development",
-        "In charge of Standard's UI",
+        "Software Engineer with over 4 years of experience in full stack web development",
+        "Leading UX for Standard Protocol",
       ],
       description:
         "Billy is a software engineer with a solid background in full stack web development. He enjoys utilizing technologies to create a fast and powerful website. He is currently in charge of managing all of Standard’s products and their development. His biggest priority is to provide users with a streamlined experience.",
@@ -147,12 +152,51 @@ const TEAM_DATA = {
       experiences: [
         "Founding partner of Bitblock Capital",
         "Guest lecturer at Zhejiang University",
-        "Author of “Unlock the new cipher, from blockchain to crypto”",
+        "Author of “Unlock the New Cipher, From Blockchain to Crypto”",
+      ],
+      description: "",
+      link: "https://www.linkedin.com/in/ziang-ling-195124ab/",
+      photo: tony,
+    },
+    {
+      name: "Dixon Wong",
+      title: "Product Owner",
+      experiences: [
+        "Product Manager in Digital Banking",
+        "Former Marketer and Analytics Consultant",
+        "Ex TEDx Organiser",
       ],
       description:
         "Tony is an expert in Crypto Currency Industry with a versatile spectrum. He is currently a lecturer at Zhejiang University teaching subjects related to Blockchain and is the author of “Unlock the new cipher, from blockchain to crypto”. He also actively invests in Crypto Currency Industry as the Founding Partner of BitBlock Capital.",
       link: "https://www.linkedin.com/in/ziang-ling-195124ab/",
-      photo: tony,
+      photo: dixon,
+    },
+    {
+      name: "Beli Hong",
+      title: "Operational Director",
+      experiences: [
+        "Co-founder of Fiat Capital",
+        "Ex-chairman of Zhejiang University Blockchain Association",
+        "Operational Director of DeepThinker Capital",
+      ],
+      description:
+        "Tony is an expert in Crypto Currency Industry with a versatile spectrum. He is currently a lecturer at Zhejiang University teaching subjects related to Blockchain and is the author of “Unlock the new cipher, from blockchain to crypto”. He also actively invests in Crypto Currency Industry as the Founding Partner of BitBlock Capital.",
+      link: "https://www.linkedin.com/in/ziang-ling-195124ab/",
+      photo: beli,
+    },
+
+    {
+      name: "Michelle Tsing",
+      title: "Community Director",
+      experiences: [
+        "Managing Partner at Cognito Capital",
+        "Co-founder of Governance Research Institute  (e-governance)",
+        "Host at Laptop Radio",
+      ],
+      description:
+        "Tony is an expert in Crypto Currency Industry with a versatile spectrum. He is currently a lecturer at Zhejiang University teaching subjects related to Blockchain and is the author of “Unlock the new cipher, from blockchain to crypto”. He also actively invests in Crypto Currency Industry as the Founding Partner of BitBlock Capital.",
+      link: "https://www.linkedin.com/in/ziang-ling-195124ab/",
+      photo: mich,
     },
   ],
   advisors: [
@@ -160,14 +204,64 @@ const TEAM_DATA = {
       name: "Charlie Hu",
       title: "Head Advisor",
       experiences: [
-        "Cofounder of PolkaBase",
-        "Managing partner at Candaq",
-        "Expert of Polkadot Ecosystem and Web 3.0",
+        "Partner at CarbonBlue Ventures",
+        "Polkadot Ecosystem and Web 3.0 Maestro",
       ],
       description:
         "Charlie is a specialist of Blockchain and related applications. He is the co-founder of PolkaBase with active engagement in Chinese Polkadot community. Charlie has more than 8 years of experience in blockchain industry with emphasis in community building, ecosystem development and growth marketing. He has successfully incubated and supported multiple polkadot projects to into global level.",
       link: "https://www.linkedin.com/in/charlieyechuanhu/",
       photo: charlie,
+    },
+    {
+      name: "March Zheng",
+      title: "Global Communications Director",
+      experiences: [
+        "General Partner at Bizantine Capital",
+        "Born and raised in America",
+        "Studied at Emory and Washington and Lee",
+      ],
+      description:
+        "over 5 years and has coordinated investments exceeding $50M into world-class distributed technologies project. He has guided advisory portfolios to establish key strategic initiatives by securing partnerships, ensuring proper marketing direction, and encompassing overall day-to-day operations",
+      link: "https://www.linkedin.com/in/charlieyechuanhu/",
+      photo: march,
+    },
+    {
+      name: "Jasper Byun",
+      title: "Marketing Advisor",
+      experiences: [
+        "Founder of Blocksync Ventures",
+        "Head of Fintech at Brilliance",
+        "Ambassador and strategic advisor to several Polkadot projects",
+      ],
+      description:
+        "over 5 years and has coordinated investments exceeding $50M into world-class distributed technologies project. He has guided advisory portfolios to establish key strategic initiatives by securing partnerships, ensuring proper marketing direction, and encompassing overall day-to-day operations",
+      link: "https://www.linkedin.com/in/charlieyechuanhu/",
+      photo: jasper,
+    },
+    {
+      name: "Julia Su",
+      title: "Strategic Advisor",
+      experiences: [
+        "Co-founder of Digitalweek.online",
+        "Co-founder and CEO of ECIDE - Eurasian Center of Innovation and Digital Economy",
+      ],
+      description: "",
+      link: "https://www.linkedin.com/in/charlieyechuanhu/",
+      photo: julia,
+    },
+    {
+      name: "Momo Xu",
+      title: "Marketing Advisor",
+      experiences: [
+        "Former Administrative Assistant at Google",
+        "Top-leader at Nuskin Global Asian market department",
+        "Asian market Director of new media operations at Sephora",
+        "BD Director at BIKI",
+        "Partner at Snapfigers",
+      ],
+      description: "",
+      link: "https://www.linkedin.com/in/charlieyechuanhu/",
+      photo: momo,
     },
   ],
 };
@@ -192,14 +286,24 @@ function TeamProfile(props) {
   };
 
   return (
-    <div className="algorithmic">
-      <div className={classNames("container")}>
-        <h1 className={classes.teamTitle}>Team</h1>
-        <div className={classes.tpContainer}>{renderProfiles("founders")}</div>
-        <div className={classes.tpContainer}>{renderProfiles("team")}</div>
-        <div className={classes.tpContainer}>{renderProfiles("advisors")}</div>
+    <>
+      <div className="algorithmic">
+        <div className={classNames("container")}>
+          <h1 className={classes.teamTitle}>Team</h1>
+          <div className={classes.tpContainer}>
+            {renderProfiles("founders")}
+          </div>
+        </div>
       </div>
-    </div>
+      <div className="permissionless">
+        <div className={classNames("container")}>
+          <h1 className={classes.teamTitle}>Advisors</h1>
+          <div className={classes.tpContainer}>
+            {renderProfiles("advisors")}
+          </div>
+        </div>
+      </div>
+    </>
   );
 }
 

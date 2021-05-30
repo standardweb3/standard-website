@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+.stndcontainer {
+  padding-top: 135px;
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+  .stndcontainer {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .stndcontainer {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .stndcontainer {
+    width: 1170px;
+  }
+}
+/* end of home styles */

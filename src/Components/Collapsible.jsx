@@ -4,8 +4,8 @@
 
 import React, { useState, useEffect } from "react";
 import { createUseStyles, useTheme } from "react-jss";
-import classNames from "classnames";
 import AnimateHeight from "react-animate-height";
+import NewTypical from "./NewTypical";
 
 const useStyles = createUseStyles((Themes) => {
   return {

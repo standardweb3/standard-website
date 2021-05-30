@@ -23,14 +23,15 @@ function Meet(props) {
               </div>
               <div className="col-xs-12 col-md-6 text-left  col-md-pull-5">
                 <h2 className="title">
-                  Introducing the collaterized algorithmic <br />
-                  stablecoin
+                  Introducing the Collateralized, Rebasable
+                  <br />
+                  Stablecoin
                 </h2>
                 <p className="paragraph">
-                  Standard establishes a reserve bank with decentralized
-                  governance. It issues a collateralized stable coin valued at
-                  1USD, that has an elastic supply determined by a rebase
-                  mechanism.
+                  Standard Protocol establishes a reserve bank with
+                  decentralized governance. It issues a collateralized stable
+                  coin valued at 1USD, that has an elastic supply determined by
+                  a rebase mechanism.
                 </p>
                 <div className="row">
                   <div className="col-xs-12 col-md-5">

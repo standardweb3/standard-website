@@ -30,10 +30,10 @@ function Leverage(props) {
                 <img src={leverageGIF} alt="leverage-animation" />
               </div>
               <div className="col-xs-12 col-md-6 text-left col-md-offset-1 col-xs-offset-0">
-                <h2 className="title">Leverage on everything</h2>
+                <h2 className="title">Leverage Everything</h2>
                 <p className="paragraph">
-                  Standard enables leveraged trading of virtual stocks and
-                  commodities, backed by synthetic assets that are minted
+                  Standard Protocol enables leveraged trading of virtual stocks
+                  and commodities, backed by synthetic assets that are minted
                   through the use of oracles.
                 </p>
                 <div className="row">

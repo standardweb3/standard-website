@@ -20,13 +20,13 @@ function Liquidation(props) {
               <div className="col-xs-12 col-md-6 text-left  col-md-pull-5">
                 <h2 className="title">
                   Permissionless <br />
-                  access on <br />
-                  liquidated assets
+                  Access to <br />
+                  Liquidated Assets
                 </h2>
                 <p className="paragraph">
-                  In bear run, Standard places liquidated assets in automated
-                  market maker instead of doing an auction, creating an
-                  arbitrage where users can buy assets in a cheaper price.{" "}
+                  Standard Protocol places liquidated assets in an AMM instead
+                  of an auction, creating an opportunity for users to buy
+                  discounted assets.
                 </p>
                 <div className="row">
                   <div className="col-md-5">

@@ -4,7 +4,10 @@ import classNames from "classnames";
 import twitter from "assets/images/twitter@2x.png";
 import medium from "assets/images/medium@2x.png";
 import linkedin from "assets/images/linkedin@2x.png";
+import instagram from "assets/images/instagram.png";
+
 import standardLogo from "assets/images/standard-logo.png";
+import wp from "assets/whitepaper.pdf";
 
 const useStyles = createUseStyles((Themes) => {
   return {
@@ -59,11 +62,20 @@ function Footer(props) {
           <p
             className={classNames("footer-sub-title", classes.footer_sub_title)}
           >
-            Documentations
+            Documentation
           </p>
           <a
+            href="https://tinyurl.com/stndPitchDeck"
+            target="_blank"
+            rel="noopener noreferrer"
             className="footer-link"
-            href="https://app.slidebean.com/p/8gld9u042r/Standard-protocol"
+            alt="deck"
+          >
+            Slides
+          </a>
+          <a
+            className="footer-link"
+            href="https://tinyurl.com/stndWP"
             target="_blank"
             rel="noopener noreferrer"
             alt="white-paper"
@@ -77,7 +89,7 @@ function Footer(props) {
             rel="noopener noreferrer"
             alt="grant-application"
           >
-            Grant Application
+            W3F Grant Application
           </a>
         </div>
 
@@ -113,7 +125,16 @@ function Footer(props) {
         <div className="col-xs-12 mobile-collapse-section">
           <div id="papers">
             <a
-              href="https://app.slidebean.com/p/8gld9u042r/Standard-protocol"
+              href="https://tinyurl.com/stndPitchDeck"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footer-link"
+              alt="white-paper"
+            >
+              Slides
+            </a>
+            <a
+              href="https://tinyurl.com/stndWP"
               target="_blank"
               rel="noopener noreferrer"
               className="footer-link"
@@ -128,7 +149,7 @@ function Footer(props) {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Grant Application
+              W3F Grant Application
             </a>
           </div>
         </div>
@@ -177,7 +198,7 @@ function Footer(props) {
             <a
               alt="medium"
               target="_blank"
-              href="https://medium.com/@standard_protocol"
+              href="https://blog.standard.tech/"
               rel="noopener noreferrer"
             >
               <img className="social-icon" src={medium} alt="medium" />
@@ -189,6 +210,14 @@ function Footer(props) {
               alt="linkedIn"
             >
               <img className="social-icon" src={linkedin} alt="linkedin" />
+            </a>
+            <a
+              href="https://www.instagram.com/standarddefiofficial/"
+              target="_blank"
+              rel="noopener noreferrer"
+              alt="instagram"
+            >
+              <img className="social-icon" src={instagram} alt="instagram" />
             </a>
           </div>
         </div>

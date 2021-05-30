@@ -110,8 +110,8 @@ function Main(props) {
                         "paragraph"
                       )}
                     >
-                      Standard delivers collaterized, interoperable Digital
-                      Assets on Substrate
+                      Standard Protocol delivers collateralized, interoperable
+                      Digital Assets on Substrate
                     </p>
                   </div>
                 </div>
