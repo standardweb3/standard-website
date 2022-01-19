@@ -1,11 +1,11 @@
-import React, { useEffect, useState, useRef } from "react";
-import styled from "styled-components";
-import { motion } from "framer-motion";
+import React, { useEffect, useState, useRef } from 'react';
+import styled from 'styled-components';
 
 function Countdown(props) {
   const [date, setDate] = useState(null);
   const timer = useRef(null);
-
+  
+  console.log(props)
   useEffect(() => {
     timer.current = setInterval(() => {
       const date = calculateCountdown(props.date);
@@ -64,7 +64,7 @@ function Countdown(props) {
   const addLeadingZeros = (value) => {
     value = String(value);
     while (value.length < 2) {
-      value = "0" + value;
+      value = '0' + value;
     }
     return value;
   };
@@ -76,7 +76,7 @@ function Countdown(props) {
           <span className="countdown-col-element">
             <strong>{addLeadingZeros(date.days)}</strong>
             <span className="countdown-unit">
-              {date.days === 1 ? "Day" : "Days"}
+              {date.days === 1 ? 'Day' : 'Days'}
             </span>
           </span>
         </span>

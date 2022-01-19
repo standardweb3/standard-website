@@ -1,16 +1,16 @@
-import React from "react";
-import styled from "styled-components";
-import { motion } from "framer-motion";
+import React from 'react';
+import styled from 'styled-components';
+import { motion } from 'framer-motion';
 import {
   VerticalTimeline,
   VerticalTimelineElement,
-} from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
-import { useViewportContext } from "Components/NewPageComponents/useViewport";
+} from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
+import { useViewportContext } from 'Components/NewPageComponents/useViewport';
 
-import mtrgl from "assets/images/new/mtr.png";
-import ltrgl from "assets/images/new/ltr.png";
-import stndgl from "assets/images/new/stnd.png";
+import mtrgl from 'assets/images/new/mtr.png';
+import ltrgl from 'assets/images/new/ltr.png';
+import stndgl from 'assets/images/new/stnd.png';
 
 function Roadmap(props) {
   const viewport = useViewportContext();
@@ -18,7 +18,7 @@ function Roadmap(props) {
   return (
     <div className={`${props.className} roadmap stndcontainer`}>
       <header>
-        <motion.h1 drag={viewport === "desktopsm" || viewport === "desktop"}>
+        <motion.h1 drag={viewport === 'desktopsm' || viewport === 'desktop'}>
           Our Journey
         </motion.h1>
       </header>
@@ -26,146 +26,186 @@ function Roadmap(props) {
         <VerticalTimelineElement
           className="vertical-timeline-element"
           contentStyle={{
-            borderRadius: "12px",
+            borderRadius: '12px',
           }}
-          contentArrowStyle={{ borderRight: "7px solid  #F365BD" }}
+          contentArrowStyle={{ borderRight: '7px solid  #F365BD' }}
           iconStyle={{
-            background: "#000",
-            borderColor: "#000",
-            color: "#fff",
+            background: '#000',
+            borderColor: '#000',
+            color: '#fff',
           }}
           icon={
             <motion.img
-              drag={viewport === "desktopsm" || viewport === "desktop"}
+              drag={viewport === 'desktopsm' || viewport === 'desktop'}
               src={mtrgl}
             />
           }
         >
           <motion.h3
-            drag={viewport === "desktopsm" || viewport === "desktop"}
+            drag={viewport === 'desktopsm' || viewport === 'desktop'}
             className="vertical-timeline-element-title"
           >
             2021 Q1
           </motion.h3>
-          <motion.p drag={viewport === "desktopsm" || viewport === "desktop"}>
-            Oracle Module Integration,
-            <br />
-            Council Recruit
+          <motion.p drag={viewport === 'desktopsm' || viewport === 'desktop'}>
+            - Oracle Module
+            <br />- Web3 Grant
           </motion.p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element"
           contentStyle={{
-            borderRadius: "12px",
+            borderRadius: '12px',
           }}
-          contentArrowStyle={{ borderRight: "7px solid  #F365BD" }}
+          contentArrowStyle={{ borderRight: '7px solid  #F365BD' }}
           iconStyle={{
-            background: "#000",
-            borderColor: "#000",
-            color: "#fff",
+            background: '#000',
+            borderColor: '#000',
+            color: '#fff',
           }}
           icon={
             <motion.img
-              drag={viewport === "desktopsm" || viewport === "desktop"}
+              drag={viewport === 'desktopsm' || viewport === 'desktop'}
               src={ltrgl}
             />
           }
         >
           <motion.h3
-            drag={viewport === "desktopsm" || viewport === "desktop"}
+            drag={viewport === 'desktopsm' || viewport === 'desktop'}
             className="vertical-timeline-element-title"
           >
             2021 Q2
           </motion.h3>
-          <motion.p drag={viewport === "desktopsm" || viewport === "desktop"}>
-            Kusama parachain crowdloan,
+          <motion.p drag={viewport === 'desktopsm' || viewport === 'desktop'}>
+            - Release of STND, the governance token (ERC-20)
             <br />
-            Chainbridge test run on Kusama,
+            - IDO on Polkastarter
             <br />
-            Run 1st Council
-            <br />
-            Yield farming starts
+            - Listing on KuCoin, Gate.io, Coinone, Uniswap
+            <br />- Staking campaign
           </motion.p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element"
           contentStyle={{
-            borderRadius: "12px",
+            borderRadius: '12px',
           }}
-          contentArrowStyle={{ borderRight: "7px solid  #F365BD" }}
+          contentArrowStyle={{ borderRight: '7px solid  #F365BD' }}
           iconStyle={{
-            background: "#000",
-            borderColor: "#000",
-            color: "#fff",
+            background: '#000',
+            borderColor: '#000',
+            color: '#fff',
           }}
           icon={
             <motion.img
-              drag={viewport === "desktopsm" || viewport === "desktop"}
+              drag={viewport === 'desktopsm' || viewport === 'desktop'}
               src={stndgl}
             />
           }
         >
           <motion.h3
-            drag={viewport === "desktopsm" || viewport === "desktop"}
+            drag={viewport === 'desktopsm' || viewport === 'desktop'}
             className="vertical-timeline-element-title"
           >
             2021 Q3
           </motion.h3>
-          <motion.p drag={viewport === "desktopsm" || viewport === "desktop"}>
-            Polkadot parachain crowdloan
+          <motion.p drag={viewport === 'desktopsm' || viewport === 'desktop'}>
+            - Launch on Polygon and Shiden
+            <br />
+            - Release DEX MVP on Shiden
+            <br />- Prepare LP on more DEXes
           </motion.p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element"
           contentStyle={{
-            borderRadius: "12px",
+            borderRadius: '12px',
           }}
-          contentArrowStyle={{ borderRight: "7px solid  #F365BD" }}
+          contentArrowStyle={{ borderRight: '7px solid  #F365BD' }}
           iconStyle={{
-            background: "#000",
-            borderColor: "#000",
-            color: "#fff",
+            background: '#000',
+            borderColor: '#000',
+            color: '#fff',
           }}
           icon={
             <motion.img
-              drag={viewport === "desktopsm" || viewport === "desktop"}
+              drag={viewport === 'desktopsm' || viewport === 'desktop'}
               src={mtrgl}
             />
           }
         >
           <motion.h3
-            drag={viewport === "desktopsm" || viewport === "desktop"}
+            drag={viewport === 'desktopsm' || viewport === 'desktop'}
             className="vertical-timeline-element-title"
           >
             2021 Q4
           </motion.h3>
-          <motion.p drag={viewport === "desktopsm" || viewport === "desktop"}>
-            Yield farming starts if Polkadot parachain is connected
+          <motion.p drag={viewport === 'desktopsm' || viewport === 'desktop'}>
+            - Expand multi-chain presence
             <br />
-            Apply Standard Protocol to other ecosystems (Cosmos, ethereum, etc.)
+            - Launch MTR stablecoin and expand evm ecosystem
+            <br />
+            - Participate in Kusama & Polkadot parachain auction
+            <br />- Beginning on GameFi
           </motion.p>
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
           className="vertical-timeline-element"
           contentStyle={{
-            borderRadius: "12px",
+            borderRadius: '12px',
           }}
-          contentArrowStyle={{ borderRight: "7px solid  #F365BD" }}
+          contentArrowStyle={{ borderRight: '7px solid  #F365BD' }}
           iconStyle={{
-            background: "#000",
-            borderColor: "#000",
-            color: "#fff",
+            background: '#000',
+            borderColor: '#000',
+            color: '#fff',
           }}
           icon={
             <motion.img
-              drag={viewport === "desktopsm" || viewport === "desktop"}
+              drag={viewport === 'desktopsm' || viewport === 'desktop'}
+              src={mtrgl}
+            />
+          }
+        >
+          <motion.h3
+            drag={viewport === 'desktopsm' || viewport === 'desktop'}
+            className="vertical-timeline-element-title"
+          >
+            2022
+          </motion.h3>
+          <motion.p drag={viewport === 'desktopsm' || viewport === 'desktop'}>
+            - Release MTR v1.0 across multiple chains
+            <br />
+            - Integrate of 3rd Party wallets
+            <br />
+            - Release wallet native to MTR
+            <br />
+            - Expand CeFi and GameFi partnerships
+            <br />- Scale pipelined project with DeFi partners
+          </motion.p>
+        </VerticalTimelineElement>
+
+        <VerticalTimelineElement
+          className="vertical-timeline-element"
+          contentStyle={{
+            borderRadius: '12px',
+          }}
+          contentArrowStyle={{ borderRight: '7px solid  #F365BD' }}
+          iconStyle={{
+            background: '#000',
+            borderColor: '#000',
+            color: '#fff',
+          }}
+          icon={
+            <motion.img
+              drag={viewport === 'desktopsm' || viewport === 'desktop'}
               src={ltrgl}
             />
           }
         >
           <motion.h3
-            drag={viewport === "desktopsm" || viewport === "desktop"}
+            drag={viewport === 'desktopsm' || viewport === 'desktop'}
             className="vertical-timeline-element-title"
           >
             Join our journey
@@ -174,23 +214,23 @@ function Roadmap(props) {
         <VerticalTimelineElement
           className="vertical-timeline-element"
           contentStyle={{
-            borderRadius: "12px",
+            borderRadius: '12px',
           }}
-          contentArrowStyle={{ borderRight: "7px solid  #F365BD" }}
+          contentArrowStyle={{ borderRight: '7px solid  #F365BD' }}
           iconStyle={{
-            background: "#000",
-            borderColor: "#000",
-            color: "#fff",
+            background: '#000',
+            borderColor: '#000',
+            color: '#fff',
           }}
           icon={
             <motion.img
-              drag={viewport === "desktopsm" || viewport === "desktop"}
+              drag={viewport === 'desktopsm' || viewport === 'desktop'}
               src={stndgl}
             />
           }
         >
           <motion.h3
-            drag={viewport === "desktopsm" || viewport === "desktop"}
+            drag={viewport === 'desktopsm' || viewport === 'desktop'}
             className="vertical-timeline-element-title"
           >
             It will be awesome
@@ -199,23 +239,23 @@ function Roadmap(props) {
         <VerticalTimelineElement
           className="vertical-timeline-element"
           contentStyle={{
-            borderRadius: "12px",
+            borderRadius: '12px',
           }}
-          contentArrowStyle={{ borderRight: "7px solid  #F365BD" }}
+          contentArrowStyle={{ borderRight: '7px solid  #F365BD' }}
           iconStyle={{
-            background: "#000",
-            borderColor: "#000",
-            color: "#fff",
+            background: '#000',
+            borderColor: '#000',
+            color: '#fff',
           }}
           icon={
             <motion.img
-              drag={viewport === "desktopsm" || viewport === "desktop"}
+              drag={viewport === 'desktopsm' || viewport === 'desktop'}
               src={mtrgl}
             />
           }
         >
           <motion.h3
-            drag={viewport === "desktopsm" || viewport === "desktop"}
+            drag={viewport === 'desktopsm' || viewport === 'desktop'}
             className="vertical-timeline-element-title"
           >
             Together, always better!
@@ -223,11 +263,11 @@ function Roadmap(props) {
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
-          contentStyle={{ background: "transparent" }}
-          iconStyle={{ background: "#000", color: "#fff" }}
+          contentStyle={{ background: 'transparent' }}
+          iconStyle={{ background: '#000', color: '#fff' }}
           icon={
             <motion.img
-              drag={viewport === "desktopsm" || viewport === "desktop"}
+              drag={viewport === 'desktopsm' || viewport === 'desktop'}
               src={ltrgl}
             />
           }

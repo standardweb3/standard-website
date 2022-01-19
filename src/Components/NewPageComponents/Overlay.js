@@ -1,7 +1,8 @@
 import React, { useMemo } from "react";
 import styled from "styled-components";
 import Particles from "react-tsparticles";
-import Programs from "./Programs";
+// import Programs from "./Programs";
+import Countdown from "./Countdown";
 
 import logo from "assets/images/standard-logo.png";
 
@@ -138,13 +139,16 @@ function Overlay(props) {
   );
   return (
     <div className={`${props.className}`} onClick={props.close}>
+    {confetti}
+
       <div className="overlay__content">
         <img className="overlay__logos_logo" src={logo} />
         <h1>
-          Join Standard Protocol's <br />
-          Community Collective
+         Standard Protocol's mainnet launches in <br />
         </h1>
-        <Programs />
+        <div>
+        <Countdown date={1635339600000}/>
+        </div>
       </div>
     </div>
   );

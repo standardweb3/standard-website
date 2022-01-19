@@ -1,24 +1,23 @@
-import React, { useState } from "react";
-import styled from "styled-components";
-import { motion } from "framer-motion";
+import React, { useState } from 'react';
+import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
-import logo from "assets/images/standard-logo.png";
-import logo_dark from "assets/images/standard-logo-navy.png";
-import menu from "assets/images/new/menu.png";
+import logo from 'assets/images/standard-logo.png';
+import logo_dark from 'assets/images/standard-logo-navy.png';
+import menu from 'assets/images/new/menu.png';
 
-import { useThemeContext } from "Components/NewPageComponents/useTheme";
+import { useThemeContext } from 'Components/NewPageComponents/useTheme';
 
 const ITEMS = [
-  "Home",
-  "About",
-  "Offerings",
-  "Tokenomics",
-  "Ecosystem",
-  "Team",
-  "Advisors",
-  "Roadmap",
-  "Partners",
-  "Join Us",
+  'Home',
+  'About',
+  'Offerings',
+  'Tokenomics',
+  'Ecosystem',
+  'Team',
+  'Advisors',
+  'Roadmap',
+  'Partners',
 ];
 
 function Nav(props) {
@@ -28,7 +27,7 @@ function Nav(props) {
   return (
     <nav className={props.className}>
       <img
-        src={theme === "dark" ? logo : logo_dark}
+        src={theme === 'dark' ? logo : logo_dark}
         onClick={() => {
           props.goto(0);
         }}
@@ -69,12 +68,12 @@ function Nav(props) {
               <motion.li
                 key={`mb${item}`}
                 className="nav__mb__li"
-                animate={{ x: ["-100vw", "0vw"] }}
+                animate={{ x: ['-100vw', '0vw'] }}
                 transition={{ duration: index * 0.2 }}
                 key={item}
                 onClick={() => {
                   props.goto(index);
-                }}
+                }}  
               >
                 {item}
               </motion.li>

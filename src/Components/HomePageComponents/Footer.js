@@ -1,40 +1,40 @@
-import { createUseStyles, useTheme } from "react-jss";
-import classNames from "classnames";
+import { createUseStyles, useTheme } from 'react-jss';
+import classNames from 'classnames';
 
-import twitter from "assets/images/twitter@2x.png";
-import medium from "assets/images/medium@2x.png";
-import linkedin from "assets/images/linkedin@2x.png";
-import instagram from "assets/images/instagram.png";
+import twitter from 'assets/images/twitter@2x.png';
+import medium from 'assets/images/medium@2x.png';
+import linkedin from 'assets/images/linkedin@2x.png';
+import instagram from 'assets/images/instagram.png';
 
-import standardLogo from "assets/images/standard-logo.png";
-import wp from "assets/whitepaper.pdf";
+import standardLogo from 'assets/images/standard-logo.png';
+import wp from 'assets/whitepaper.pdf';
 
 const useStyles = createUseStyles((Themes) => {
   return {
     footer: {
-      color: "#fff",
+      color: '#fff',
     },
     logo: {
-      marginBottom: "25px",
-      width: "200px",
+      marginBottom: '25px',
+      width: '200px',
     },
     footer_sub_title: {
       fontWeight: 600,
-      fontSize: "16px",
+      fontSize: '16px',
     },
     contact_container: {
-      display: "inline-block",
-      marginLeft: "12px",
+      display: 'inline-block',
+      marginLeft: '12px',
     },
     contact: {
-      fontSize: "14px",
+      fontSize: '14px',
       margin: 0,
-      display: "inline-block",
+      display: 'inline-block',
     },
     copyright: {
-      marginRight: "12px",
-      paddingLeft: "15px",
-      display: "inline-block",
+      marginRight: '12px',
+      paddingLeft: '15px',
+      display: 'inline-block',
     },
   };
 });
@@ -45,8 +45,8 @@ function Footer(props) {
 
   return (
     <div
-      className={classNames("container", classes.footer)}
-      style={{ paddingTop: "24px" }}
+      className={classNames('container', classes.footer)}
+      style={{ paddingTop: '24px' }}
     >
       <div className="row text-left">
         <div className="col-xs-12 col-md-3 footer-main-section">
@@ -60,7 +60,7 @@ function Footer(props) {
 
         <div className="col-xs-12 col-md-2 col-md-offset-1 desktop-collapse-section">
           <p
-            className={classNames("footer-sub-title", classes.footer_sub_title)}
+            className={classNames('footer-sub-title', classes.footer_sub_title)}
           >
             Documentation
           </p>
@@ -95,7 +95,7 @@ function Footer(props) {
 
         <div className="col-xs-12 col-md-2 desktop-collapse-section">
           <p
-            className={classNames("footer-sub-title", classes.footer_sub_title)}
+            className={classNames('footer-sub-title', classes.footer_sub_title)}
           >
             Links
           </p>
@@ -182,7 +182,7 @@ function Footer(props) {
 
         <div className="col-xs-12 col-md-4 social-section">
           <p
-            className={classNames("footer-sub-title", classes.footer_sub_title)}
+            className={classNames('footer-sub-title', classes.footer_sub_title)}
           >
             Social
           </p>
@@ -190,7 +190,7 @@ function Footer(props) {
             <a
               alt="twitter"
               target="_blank"
-              href="https://twitter.com/standarddefi"
+              href="https://twitter.com/standardweb3"
               rel="noopener noreferrer"
             >
               <img className="social-icon" src={twitter} alt="twitter" />
@@ -227,7 +227,7 @@ function Footer(props) {
         <div className={classNames(classes.copyright)}>© 2021 Standard</div>|
         <div className={classNames(classes.contact_container)}>
           <a
-            className={classNames("footer-link", classes.contact)}
+            className={classNames('footer-link', classes.contact)}
             href="mailto:contact@standard.tech"
             alt="github"
             target="_blank"

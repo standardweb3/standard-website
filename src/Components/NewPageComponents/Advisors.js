@@ -1,69 +1,78 @@
-import React from "react";
-import styled from "styled-components";
-import { motion } from "framer-motion";
+import React from 'react';
+import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
-import charlie from "assets/images/tpcharlie.png";
-import jasper from "assets/images/tpjasper.png";
-import march from "assets/images/tpmarch.png";
-import momo from "assets/images/tpmomo.png";
-import julia from "assets/images/tpjulia.png";
-// import lucky from "assets/images/tplucky.png";
+import charlie from 'assets/images/tpcharlie.png';
+import jasper from 'assets/images/tpjasper.png';
+import march from 'assets/images/tpmarch.png';
+import momo from 'assets/images/tpmomo.png';
+import julia from 'assets/images/tpjulia.png';
+import lucky from 'assets/images/tplucky.png';
 
-import { useViewportContext } from "Components/NewPageComponents/useViewport";
+import { useViewportContext } from 'Components/NewPageComponents/useViewport';
 
 const TEAM_DATA = [
   {
-    name: "Charlie Hu",
-    title: "Head of Treasury, Head Advisor",
+    name: 'Charlie Hu',
+    title: 'Head of Treasury, Head Advisor',
     experiences: [
-      "Cofounder of PolkaBase",
-      "Partner at CarbonBlue Ventures",
-      "Polkadot Ecosystem and Web 3.0 Maestro",
+      'Cofounder of PolkaBase',
+      'Partner at CarbonBlue Ventures',
+      'Polkadot Ecosystem and Web 3.0 Maestro',
     ],
     description:
-      "Charlie is a specialist of Blockchain and related applications. He is the co-founder of PolkaBase with active engagement in Chinese Polkadot community. Charlie has more than 8 years of experience in blockchain industry with emphasis in community building, ecosystem development and growth marketing. He has successfully incubated and supported multiple polkadot projects to into global level.",
-    link: "https://www.linkedin.com/in/charlieyechuanhu/",
+      'Charlie is a specialist of Blockchain and related applications. He is the co-founder of PolkaBase with active engagement in Chinese Polkadot community. Charlie has more than 8 years of experience in blockchain industry with emphasis in community building, ecosystem development and growth marketing. He has successfully incubated and supported multiple polkadot projects to into global level.',
+    link: 'https://www.linkedin.com/in/charlieyechuanhu/',
     photo: charlie,
   },
+  // {
+  //   name: 'Jasper Byun',
+  //   title: 'Marketing Advisor',
+  //   experiences: [
+  //     'Founder of Blocksync Ventures',
+  //     'Head of Fintech at Brilliance',
+  //     'Ambassador and strategic advisor to several Polkadot projects',
+  //   ],
+  //   description:
+  //     'over 5 years and has coordinated investments exceeding $50M into world-class distributed technologies project. He has guided advisory portfolios to establish key strategic initiatives by securing partnerships, ensuring proper marketing direction, and encompassing overall day-to-day operations',
+  //   link: 'https://www.linkedin.com/in/charlieyechuanhu/',
+  //   photo: jasper,
+  // },
   {
-    name: "Jasper Byun",
-    title: "Marketing Advisor",
+    name: 'Julia Su',
+    title: 'Strategic Advisor',
     experiences: [
-      "Founder of Blocksync Ventures",
-      "Head of Fintech at Brilliance",
-      "Ambassador and strategic advisor to several Polkadot projects",
+      'Partner at NewTribe Capital',
+      'Co-founder of Digitalweek.online',
+      'Co-founder and CEO of ECIDE - Eurasian Center of Innovation and Digital Economy',
     ],
-    description:
-      "over 5 years and has coordinated investments exceeding $50M into world-class distributed technologies project. He has guided advisory portfolios to establish key strategic initiatives by securing partnerships, ensuring proper marketing direction, and encompassing overall day-to-day operations",
-    link: "https://www.linkedin.com/in/charlieyechuanhu/",
-    photo: jasper,
-  },
-  {
-    name: "Julia Su",
-    title: "Strategic Advisor",
-    experiences: [
-      "Partner at NewTribe Capital",
-      "Co-founder of Digitalweek.online",
-      "Co-founder and CEO of ECIDE - Eurasian Center of Innovation and Digital Economy",
-    ],
-    description: "",
-    link: "https://www.linkedin.com/in/charlieyechuanhu/",
+    description: '',
+    link: 'https://www.linkedin.com/in/charlieyechuanhu/',
     photo: julia,
   },
   {
-    name: "Momo Xu",
-    title: "Marketing Advisor",
+    name: 'Lucky Uwakwe',
+    title: 'African Community Advisor',
     experiences: [
-      "Former Administrative Assistant at Google",
-      "Top-leader at Nuskin Global Asian market department",
-      "Asian market Director of new media operations at Sephora",
-      "BD Director at BIKI",
-      "Partner at Snapfigers",
+      'Co-founder of Sabi Exchange',
+      'Participated in DFI.Money, Humania, Air Wallet and CoinDash',
     ],
-    description: "",
-    link: "https://www.linkedin.com/in/charlieyechuanhu/",
-    photo: momo,
+    photo: lucky,
   },
+  // {
+  //   name: "Momo Xu",
+  //   title: "Marketing Advisor",
+  //   experiences: [
+  //     "Former Administrative Assistant at Google",
+  //     "Top-leader at Nuskin Global Asian market department",
+  //     "Asian market Director of new media operations at Sephora",
+  //     "BD Director at BIKI",
+  //     "Partner at Snapfigers",
+  //   ],
+  //   description: "",
+  //   link: "https://www.linkedin.com/in/charlieyechuanhu/",
+  //   photo: momo,
+  // },
 ];
 
 function Advisors(props) {
@@ -73,7 +82,7 @@ function Advisors(props) {
     return TEAM_DATA.map((profile, index) => (
       <motion.div
         key={profile.name}
-        drag={viewport === "desktopsm" || viewport === "desktop"}
+        drag={viewport === 'desktopsm' || viewport === 'desktop'}
         className="advisors__card"
         animate={{ scale: [0.5, 1] }}
         transition={{ duration: 0.5 * index + 0.5 }}
@@ -86,7 +95,11 @@ function Advisors(props) {
           <img src={profile.photo} alt={`${profile.name}`} />
           <address>{profile.name}</address>
           <p className="advisors__card__title">{profile.title}</p>
-          <p>{profile.experiences.join(", ")}</p>
+          <div>
+            {profile.experiences.map((exp) => (
+              <div>- {exp}</div>
+            ))}
+          </div>
         </motion.div>
       </motion.div>
     ));
@@ -94,7 +107,7 @@ function Advisors(props) {
   return (
     <div className={`${props.className} advisors stndcontainer`}>
       <header>
-        <motion.h1 drag={viewport === "desktopsm" || viewport === "desktop"}>
+        <motion.h1 drag={viewport === 'desktopsm' || viewport === 'desktop'}>
           Our Advisors
         </motion.h1>
       </header>

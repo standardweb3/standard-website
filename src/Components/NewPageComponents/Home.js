@@ -1,30 +1,30 @@
-import React, { useState } from "react";
-import styled from "styled-components";
-import Typewriter from "typewriter-effect";
-import { motion } from "framer-motion";
+import React, { useState } from 'react';
+import styled from 'styled-components';
+import Typewriter from 'typewriter-effect';
+import { motion } from 'framer-motion';
 
-import telegram from "assets/images/new/telegram.png";
-import medium from "assets/images/new/medium.png";
-import twitter from "assets/images/new/twitter.png";
+import telegram from 'assets/images/new/telegram.png';
+import medium from 'assets/images/new/medium.png';
+import twitter from 'assets/images/new/twitter.png';
 
-import discord from "assets/images/new/discord.png";
-import web3 from "assets/images/new/wtpweb33.png";
-import wechat from "assets/images/new/wechat.png";
+import discord from 'assets/images/new/discord.png';
+import web3 from 'assets/images/new/wtpweb33.png';
+import wechat from 'assets/images/new/wechat.png';
 
-import wechatqr from "assets/images/new/wechatqr.jpeg";
+import wechatqr from 'assets/images/new/wechatqr.jpeg';
 
-import Overlay from "Components/NewPageComponents/Overlay2";
-import { useViewportContext } from "Components/NewPageComponents/useViewport";
+import Overlay from 'Components/NewPageComponents/Overlay2';
+import { useViewportContext } from 'Components/NewPageComponents/useViewport';
 
 const WPS = [
-  ["EN", "https://docsend.com/view/sp6antfgeqiziaqb"],
-  ["ZH", "https://docsend.com/view/kxq2ke64eaceqq7q"],
-  ["JA", "https://docsend.com/view/kpv3rtyvpdprmiun"],
-  ["RU", "https://docsend.com/view/mu5g4gxwwgzdagk2"],
-  ["ES", "https://docsend.com/view/2cv6pz3yxpseck4t"],
-  ["PT", "https://docsend.com/view/fmeb2gqeu9sh94w8"],
-  ["AR", "https://docsend.com/view/7f9j2fmesjx2r2ib"],
-  ["ID", "https://docsend.com/view/cgk255r9ux49nvv8"],
+  ['EN', 'https://docsend.com/view/sp6antfgeqiziaqb'],
+  ['ZH', 'https://docsend.com/view/kxq2ke64eaceqq7q'],
+  ['JA', 'https://docsend.com/view/kpv3rtyvpdprmiun'],
+  ['RU', 'https://docsend.com/view/mu5g4gxwwgzdagk2'],
+  ['ES', 'https://docsend.com/view/2cv6pz3yxpseck4t'],
+  ['PT', 'https://docsend.com/view/fmeb2gqeu9sh94w8'],
+  ['AR', 'https://docsend.com/view/7f9j2fmesjx2r2ib'],
+  ['ID', 'https://docsend.com/view/cgk255r9ux49nvv8'],
 ];
 
 function Home(props) {
@@ -42,55 +42,55 @@ function Home(props) {
         </Overlay>
       )}
       <header>
-        <motion.div drag={viewport === "desktopsm" || viewport === "desktop"}>
+        <motion.div drag={viewport === 'desktopsm' || viewport === 'desktop'}>
           <Typewriter
             options={{
-              wrapperClassName: "Typewriter__wrapper home__thenew__text",
-              cursorClassName: "Typewriter__cursor home__thenew__text",
+              wrapperClassName: 'Typewriter__wrapper home__thenew__text',
+              cursorClassName: 'Typewriter__cursor home__thenew__text',
             }}
             onInit={(typewriter) => {
               typewriter
-                .typeString("THE NEW")
+                .typeString('THE NEW')
                 .callFunction((obj) => {
-                  obj.elements.cursor.innerHTML = "";
+                  obj.elements.cursor.innerHTML = '';
                 })
                 .start();
             }}
           />
         </motion.div>
-        <motion.div drag={viewport === "desktopsm" || viewport === "desktop"}>
+        <motion.div drag={viewport === 'desktopsm' || viewport === 'desktop'}>
           <Typewriter
             options={{
-              wrapperClassName: "Typewriter__wrapper home__standard__text",
-              cursorClassName: "Typewriter__cursor home__standard__text",
+              wrapperClassName: 'Typewriter__wrapper home__standard__text',
+              cursorClassName: 'Typewriter__cursor home__standard__text',
             }}
             onInit={(typewriter) => {
               typewriter
                 .pauseFor(1300)
-                .typeString("Standard")
+                .typeString('Standard')
                 .callFunction((obj) => {
-                  obj.elements.cursor.innerHTML = "";
+                  obj.elements.cursor.innerHTML = '';
                 })
                 .start();
             }}
           />
         </motion.div>
-        <motion.div drag={viewport === "desktopsm" || viewport === "desktop"}>
+        <motion.div drag={viewport === 'desktopsm' || viewport === 'desktop'}>
           <div className="home__fda">
             <Typewriter
               options={{
-                wrapperClassName: "Typewriter__wrapper home__fda__text",
-                cursorClassName: "Typewriter__cursor home__fda__text",
-                cursor: "",
+                wrapperClassName: 'Typewriter__wrapper home__fda__text',
+                cursorClassName: 'Typewriter__cursor home__fda__text',
+                cursor: '',
                 delay: 50,
               }}
               onInit={(typewriter) => {
                 typewriter
                   .pauseFor(3000)
-                  .callFunction((obj) => (obj.elements.cursor.innerHTML = "|"))
-                  .typeString("For Digital Assets")
+                  .callFunction((obj) => (obj.elements.cursor.innerHTML = '|'))
+                  .typeString('For Digital Assets')
                   .callFunction((obj) => {
-                    obj.elements.cursor.innerHTML = "";
+                    obj.elements.cursor.innerHTML = '';
                   })
                   .start();
               }}
@@ -99,7 +99,16 @@ function Home(props) {
         </motion.div>
       </header>
       <div className="home__rsrcs">
-        <div className="home__dd btn--highlight home__rsrc">
+        <a
+          href="https://apps.standard.tech"
+          target="_blank"
+          rel="noopener noreferrer"
+          alt="deck"
+          className="home__rsrc"
+        >
+          <button className="btn--highlight">Enter App</button>
+        </a>
+        <div className="home__dd btn--opac home__rsrc">
           Whitepaper
           <ul className="home__dd__list">
             {WPS.sort((a, b) => (a[0] > b[0] ? 1 : a[0] == b[0] ? 0 : -1)).map(
@@ -128,19 +137,6 @@ function Home(props) {
           >
             <button className="btn--opac">Slides</button>
           </a>
-          <a
-            href="https://github.com/w3f/Open-Grants-Program/pull/244"
-            alt="web3-logo"
-            target="_blank"
-            className="home__rsrc"
-            rel="noopener noreferrer"
-          >
-            <img
-              className="home__web3"
-              src={web3}
-              alt="Web3 foundation-grants"
-            />
-          </a>
         </div>
       </div>
       <div className="home__socialbtns">
@@ -156,7 +152,7 @@ function Home(props) {
         <a
           alt="twitter"
           target="_blank"
-          href="https://twitter.com/standarddefi"
+          href="https://twitter.com/standardweb3"
           rel="noopener noreferrer"
           className="btn--social"
         >

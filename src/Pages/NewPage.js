@@ -1,31 +1,31 @@
-import React, { useEffect, useState, useRef, useMemo } from "react";
-import styled from "styled-components";
-import Particles from "react-tsparticles";
+import React, { useEffect, useState, useRef, useMemo } from 'react';
+import styled from 'styled-components';
+import Particles from 'react-tsparticles';
 
-import Home from "Components/NewPageComponents/Home";
-import About from "Components/NewPageComponents/About";
-import Offerings from "Components/NewPageComponents/Offerings";
-import Tokens from "Components/NewPageComponents/Tokens";
-import Ecosystem from "Components/NewPageComponents/Ecosystem";
-import Team from "Components/NewPageComponents/Team";
-import Advisors from "Components/NewPageComponents/Advisors";
-import Partners from "Components/NewPageComponents/Partners";
-import Roadmap from "Components/NewPageComponents/Roadmap";
-import Overlay from "Components/NewPageComponents/Overlay";
-import Community from "Components/NewPageComponents/Community";
-import Section from "Components/NewPageComponents/Section";
+import Home from 'Components/NewPageComponents/Home';
+import About from 'Components/NewPageComponents/About';
+import Offerings from 'Components/NewPageComponents/Offerings';
+import Tokens from 'Components/NewPageComponents/Tokens';
+import Ecosystem from 'Components/NewPageComponents/Ecosystem';
+import Team from 'Components/NewPageComponents/Team';
+import Advisors from 'Components/NewPageComponents/Advisors';
+import Partners from 'Components/NewPageComponents/Partners';
+import Roadmap from 'Components/NewPageComponents/Roadmap';
+import Overlay from 'Components/NewPageComponents/Overlay';
+import Community from 'Components/NewPageComponents/Community';
+import Section from 'Components/NewPageComponents/Section';
 
-import BGA from "Components/NewPageComponents/Bga";
-import { useThemeContext } from "Components/NewPageComponents/useTheme";
-import Reset from "Components/NewPageComponents/Reset";
+import BGA from 'Components/NewPageComponents/Bga';
+import { useThemeContext } from 'Components/NewPageComponents/useTheme';
+import Reset from 'Components/NewPageComponents/Reset';
 
-import Nav from "Components/NewPageComponents/Nav";
-import RotKickIn from "Components/NewPageComponents/RotKickIn";
+import Nav from 'Components/NewPageComponents/Nav';
+import RotKickIn from 'Components/NewPageComponents/RotKickIn';
 // import bghome from "assets/images/0.png";
-import bghome from "assets/images/new/bghome.png";
-import bgofferings from "assets/images/new/bgofferings.png";
-import bgecosystem from "assets/images/new/bgecosystem.png";
-import { useViewportContext } from "Components/NewPageComponents/useViewport";
+import bghome from 'assets/images/new/bghome.png';
+import bgofferings from 'assets/images/new/bgofferings.png';
+import bgecosystem from 'assets/images/new/bgecosystem.png';
+import { useViewportContext } from 'Components/NewPageComponents/useViewport';
 
 function NewPage(props) {
   const [showOverlay, setShowOverlay] = useState(true);
@@ -54,7 +54,7 @@ function NewPage(props) {
     </Section>,
     <Section>
       <div className="newpage__bg newpage__bg--end">
-        <img alt="bgofferings" src={bgofferings} style={{ width: "1200px" }} />
+        <img alt="bgofferings" src={bgofferings} style={{ width: '1200px' }} />
       </div>
       <Offerings />
     </Section>,
@@ -78,9 +78,6 @@ function NewPage(props) {
     </Section>,
     <Section>
       <Partners />
-    </Section>,
-    <Section>
-      <Community />
     </Section>,
   ];
 
@@ -126,8 +123,8 @@ function NewPage(props) {
   const goto = (num) => {
     if (index === num) return;
     scrollRef.current.scrollIntoView({
-      behavior: "smooth",
-      block: "center",
+      behavior: 'smooth',
+      block: 'center',
     });
     setOutPhase(true);
     clearTimeout(outPhaseTimer.current);
@@ -149,14 +146,14 @@ function NewPage(props) {
         options={{
           background: {
             color: {
-              value: "transparent",
+              value: 'transparent',
             },
           },
           fpsLimit: 30,
           particles: {
-            color: { value: theme === "dark" ? "#fff" : "#000" },
+            color: { value: theme === 'dark' ? '#fff' : '#000' },
             line_linked: {
-              color: theme === "dark" ? "#fff" : "#000",
+              color: theme === 'dark' ? '#fff' : '#000',
               distance: 150,
               enable: false,
               opacity: 0.4,
@@ -165,9 +162,9 @@ function NewPage(props) {
             move: {
               attract: { enable: false, rotateX: 600, rotateY: 600 },
               bounce: false,
-              direction: "none",
+              direction: 'none',
               enable: true,
-              out_mode: "out",
+              out_mode: 'out',
               random: true,
               speed: 0.3,
               straight: false,
@@ -182,7 +179,7 @@ function NewPage(props) {
               value: 0.6,
             },
             shape: {
-              type: "circle",
+              type: 'circle',
             },
             size: {
               anim: { enable: false, size_min: 0.3, speed: 4, sync: false },
@@ -197,13 +194,14 @@ function NewPage(props) {
     [theme]
   );
 
+  // {showOverlay && <Overlay close={() => setShowOverlay(false)} />}
+
   return (
     <main className={`${props.className}`}>
       <div ref={scrollRef} />
-      {showOverlay && <Overlay close={() => setShowOverlay(false)} />}
       {bga}
       {bg}
-      {(viewport === "desktopsm" || viewport === "desktop") && (
+      {(viewport === 'desktopsm' || viewport === 'desktop') && (
         <Reset
           onClick={() => {
             if (!outPhase) updateReloader(!reloader);
